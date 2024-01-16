@@ -1,0 +1,201 @@
+
+
+
+/*
+    1. Use a more-intuitive box-sizing model.
+*/
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+*/
+* {
+    margin: 0;
+}
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+*/
+body {
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+}
+/*
+    5. Improve media defaults
+*/
+img, 
+picture, 
+video, 
+canvas, 
+svg {
+    display: block;
+    max-width: 100%;
+}
+/*
+    6. Remove built-in form typography styles
+*/
+input, 
+button, 
+textarea, 
+select {
+    font: inherit;
+}
+/*
+    7. Avoid text overflows
+*/
+p, 
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
+    overflow-wrap: break-word;
+}
+
+h1, h2, h3 {
+    line-height: 1.1;
+}
+
+
+
+body {
+    background-color: hsl(204, 43%, 93%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 4em 1em;
+    font-family: 'Karla', sans-serif;
+}
+
+.card {
+    min-width: 375px;
+    display: grid;
+    grid-template: auto auto auto / 375px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+section {
+    padding: 2em;
+}
+
+.section1,
+.section2,
+.section3 {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between;
+    gap: 1em; 
+}
+
+.section1 { background-color: #fff; }
+.section2 { background-color: #43B3AE; }
+.section3 { background-color: #56C1BB;}   
+
+.section1__title {
+    font-size: 1.5rem;
+    color: #43B3AE;
+}
+
+.section1__subtitle {
+    font-size: 1.125rem;
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+}
+
+.section1 p:last-child {
+    color: hsl(218, 22%, 67%);
+}
+
+.section2 {
+    color: #fff;
+}
+
+.section2__title {
+    font-size: 1.25rem;
+}
+
+.flex-group {
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+.flex-group .price {
+    color: #fff;
+    font-size: 2.25em;
+    margin-right: 0.3em;
+}
+
+.flex-group p {
+    color: hsla(204, 43%, 93%, 0.5);
+}
+
+.btn {
+    background-color: hsl(71, 73%, 54%);
+    color: #fff;
+    cursor: pointer;
+    padding: .75em 1em;
+    border: 0;
+    border-radius: 7px;
+    box-shadow: 0 10px 30px 0px rgba(0, 0, 0, 0.2);
+}
+
+.section3__title {
+    font-size: 1.25rem;
+    color: #fff;
+}
+
+.section3 ul {
+    list-style: none;
+    padding: 0;
+    color: hsl(204, 43%, 93%);
+    line-height: 1.5;
+}
+
+
+@media (min-width: 710px) {
+    .card {
+        grid-template: auto auto / 335px 335px;
+    }
+
+    section {
+        padding: 3em;
+    }
+
+    .section1 {
+        grid-row: 1;
+        grid-column: 1 / -1;
+    }
+
+    .section2 {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    .btn {
+        padding-top: 1em ;
+        padding-bottom: 1em;
+    }
+
+    .section3 {
+        grid-row: 2;
+        grid-column: 2;
+    }
+}
+
+
+/* ### Primary
+
+- Cyan: hsl(179, 62%, 43%)
+- Bright Yellow: hsl(71, 73%, 54%)
+
+### Neutral
+
+- Light Gray: hsl(204, 43%, 93%)
+- Grayish Blue: hsl(218, 22%, 67%) */
