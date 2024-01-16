@@ -1,5 +1,6 @@
-
-
+/* ==============================
+    css reset
+================================*/
 
 /*
     1. Use a more-intuitive box-sizing model.
@@ -61,7 +62,9 @@ h1, h2, h3 {
     line-height: 1.1;
 }
 
-
+/* ==============================
+    Layout:
+================================*/
 
 body {
     background-color: hsl(204, 43%, 93%);
@@ -158,6 +161,9 @@ section {
     line-height: 1.5;
 }
 
+/* ==============================
+    media query
+================================*/
 
 @media (min-width: 710px) {
     .card {
@@ -188,14 +194,3 @@ section {
         grid-column: 2;
     }
 }
-
-
-/* ### Primary
-
-- Cyan: hsl(179, 62%, 43%)
-- Bright Yellow: hsl(71, 73%, 54%)
-
-### Neutral
-
-- Light Gray: hsl(204, 43%, 93%)
-- Grayish Blue: hsl(218, 22%, 67%) */
